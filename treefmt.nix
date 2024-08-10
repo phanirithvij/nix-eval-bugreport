@@ -3,6 +3,7 @@ _: {
   programs.nixfmt.enable = true;
   programs.dprint.enable = true;
   programs.dprint.settings = {
+    includes = [ "**/*.{json,yaml,yml,md}" ];
     excludes = [
       "**/node_modules"
       "**/*-lock.json"
